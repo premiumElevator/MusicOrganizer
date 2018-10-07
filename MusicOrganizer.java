@@ -51,6 +51,14 @@ public class MusicOrganizer
      * Play a track in the collection.
      * @param index The index of the track to be played.
      */
+    
+    public void randomTrack()
+    {
+        int randomInt = ((int)(Math.random() * (tracks.size()-0))); 
+        Track track = tracks.get(randomInt);
+        player.startPlaying(track.getFilename());
+        System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+    }
     public void playTrack(int index)
     {
         if(indexValid(index)) {
