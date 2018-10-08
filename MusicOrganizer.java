@@ -63,8 +63,8 @@ public class MusicOrganizer
                
           
            }
-        //recursively iterates the remaining songs in the array
-        else
+       //recursively iterates the remaining songs in the array
+       else
            randomPlaylist(); 
        
        
