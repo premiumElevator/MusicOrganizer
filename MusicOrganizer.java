@@ -5,13 +5,14 @@ import java.util.Iterator;
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Peter Basily
+ * @version 2018.10.08
  */
 public class MusicOrganizer
 {
-    // An ArrayList for storing music tracks.
+    // An ArrayList for storing music tracks.    
     private ArrayList<Track> tracks;
+    
     // A player for the music tracks.
     private MusicPlayer player;
     // A reader that can read music files and load them as tracks.
@@ -34,38 +35,38 @@ public class MusicOrganizer
      * Add a track file to the collection.
      * @param filename The file name of the track to be added.
      */
+    
     public void randomPlaylist()
     {
+       //iterates the tracks arraylist
        Iterator<Track> it = tracks.iterator();
+       
+       //checks if tracks has a next value
        while(it.hasNext())
        {
-           int random = (((int)(Math.random()) * (tracks.size()-0)));
+           //creates a random int within the size of the array
+           int random = (((int)(Math.random()) * ((tracks.size()-1)))); 
            
-           player.startPlaying(tracks.get(random).getFilename());
-           Track track = tracks.get(random);
-           System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
-            
-           
-           tracks.remove(random);
-           
-           if(tracks.size()==0){
+           playTrack(random); //plays the random number track within the playlist
+           removeTrack(random); //removes the last played track from the arraylist
+           listAllTracks(); //lists remaining tracks
        
-            System.out.println("No more songs");
-           break;
-        }
-           else
-            randomPlaylist();
-           
-           break;
           
        }
-       System.out.println("");
        
-       //if(tracks.size()==0)
+       //once the arraylist is out of songs it prints a message that that there are no more songs and replineshes the library
+       if(!it.hasNext()) 
+           {
        
-           //System.out.println("No more songs");
-       //else
-       //randomPlaylist();
+               System.out.println("No more songs");
+               readLibrary("../audio");
+               
+          
+           }
+        //recursively iterates the remaining songs in the array
+        else
+           randomPlaylist(); 
+       
        
        
        
