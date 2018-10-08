@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Peter Basily
+ * @version 2018.10.08
  */
 public class MusicOrganizer
 {
@@ -54,10 +54,8 @@ public class MusicOrganizer
     
     public void randomTrack()
     {
-        int randomInt = ((int)(Math.random() * (tracks.size()-0))); 
-        Track track = tracks.get(randomInt);
-        player.startPlaying(track.getFilename());
-        System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+        int randomInt = ((int)(Math.random() * (tracks.size()-1))); 
+        playTrack(randomInt);
     }
     public void playTrack(int index)
     {
