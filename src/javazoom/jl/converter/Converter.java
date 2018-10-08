@@ -18,7 +18,11 @@
  *----------------------------------------------------------------------
  */
 
+<<<<<<< HEAD
 package src.javazoom.jl.converter;
+=======
+package javazoom.jl.converter;
+>>>>>>> RandomSong
 
 import java.io.BufferedInputStream;
 import java.io.File;

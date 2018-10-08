@@ -37,7 +37,11 @@
  *----------------------------------------------------------------------
  */
 
+<<<<<<< HEAD
 package src.javazoom.jl.decoder;
+=======
+package javazoom.jl.decoder;
+>>>>>>> RandomSong
 
 /**
  * Class to implements Huffman decoder.

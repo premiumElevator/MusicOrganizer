@@ -19,7 +19,11 @@
  */
 
 
+<<<<<<< HEAD
 package src.javazoom.jl.decoder;
+=======
+package javazoom.jl.decoder;
+>>>>>>> RandomSong
 
 /**
  * The <code>Equalizer</code> class can be used to specify

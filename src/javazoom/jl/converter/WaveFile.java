@@ -23,7 +23,11 @@
  *----------------------------------------------------------------------
  */
 
+<<<<<<< HEAD
 package src.javazoom.jl.converter;
+=======
+package javazoom.jl.converter;
+>>>>>>> RandomSong
 
 /**
  * Class allowing WaveFormat Access

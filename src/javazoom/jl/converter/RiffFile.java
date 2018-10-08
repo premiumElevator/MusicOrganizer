@@ -23,7 +23,11 @@
  *----------------------------------------------------------------------
  */
 
+<<<<<<< HEAD
 package src.javazoom.jl.converter;
+=======
+package javazoom.jl.converter;
+>>>>>>> RandomSong
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

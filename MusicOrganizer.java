@@ -90,6 +90,12 @@ public class MusicOrganizer
      * Play a track in the collection.
      * @param index The index of the track to be played.
      */
+    
+    public void randomTrack()
+    {
+        int randomInt = ((int)(Math.random() * (tracks.size()-1))); 
+        playTrack(randomInt);
+    }
     public void playTrack(int index)
     {
         if(indexValid(index)) {

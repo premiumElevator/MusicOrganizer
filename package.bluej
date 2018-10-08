@@ -11,10 +11,17 @@ dependency3.type=UsesDependency
 dependency4.from=MusicOrganizer
 dependency4.to=TrackReader
 dependency4.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1056
 editor.fx.0.width=1936
 editor.fx.0.x=-8
 editor.fx.0.y=-8
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=552
+editor.fx.0.y=100
+>>>>>>> RandomSong
 objectbench.height=139
 objectbench.width=451
 package.divider.horizontal=0.599476439790576

@@ -33,7 +33,11 @@
  *----------------------------------------------------------------------
  */
 
+<<<<<<< HEAD
 package src.javazoom.jl.decoder;
+=======
+package javazoom.jl.decoder;
+>>>>>>> RandomSong
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
